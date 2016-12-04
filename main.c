@@ -25,7 +25,7 @@ void interrupt 9 hsync_interrupt(){
   
   //PORTB = (++row ^ ROWS)?(PORTB & ~0x02):(row =0x00);   //maybe faster
   
-  PORTB &= (++row ^ ROWS)?~0x02:~0x03;
+  PORTB &= (++row == ROWS)?~0x03:~0x02;
   row = row^ROWS?row:0;
 
   PTP = 0;
