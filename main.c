@@ -23,10 +23,7 @@ void interrupt 9 hsync_interrupt(){
   TC1 += HSYNC_PERIOD;
   TC0 = TC1 - HSYNC_ACTIVE; 
   
-  //PORTB = (++row ^ ROWS)?(PORTB & ~0x02):(row =0x00);   //maybe faster
-  
-  PORTB &= (++row == ROWS)?~0x03:~0x02;
-  row = row^ROWS?row:0;
+  PORTB = (++row == ROWS)?(row =0x00):(PORTB & ~0x02); 
 
   PTP = 0;
 
