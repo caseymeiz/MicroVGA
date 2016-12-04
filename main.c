@@ -22,11 +22,8 @@ void interrupt 8 unset_interrupt(){
 void interrupt 9 hsync_interrupt(){
   TC1 += HSYNC_PERIOD;
   TC0 = TC1 - HSYNC_ACTIVE; 
-  
   PORTB = (++row == ROWS)?(row =0x00):(PORTB & ~0x02); 
-
   PTP = 0;
-
   TFLG1 |= 0x02;        // bset clear the interrupt
 }
 
