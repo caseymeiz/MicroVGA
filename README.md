@@ -22,3 +22,9 @@ We had two main interrupt; both interrupt serverd for getting the sync time to b
   
 
 ## Reflection
+
+# Resources
+
+[VGA timings](http://tinyvga.com/vga-timing/640x480@60Hz)
+[VGA Pinout](http://pinouts.ru/Video/VGA15_pinout.shtml)
+
