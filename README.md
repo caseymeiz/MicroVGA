@@ -7,7 +7,7 @@ Color VGA Video From a MC9S12DJ256 Microcontroller
 ## Desription
 The goal of our project was to display color on a monitor that supported VGA. 
 
-To achive this goal we decided to create a 75 x 75 pixel square on the monitor that have it's color changed with a button and it's position moved witha JoyStick. The color of the square and background can be chaned to 8 different colors.
+To achive this goal we decided to create a 75 x 75 pixel square on the monitor that can have it's color changed with a button press and it's position moved witha JoyStick. The color of the square and background can be chaned to 8 different colors.
 ## Set-up
 ### Components
 * Monitor that supports VGA connection and 680x480 resolution
