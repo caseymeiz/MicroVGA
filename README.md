@@ -6,7 +6,7 @@ Color VGA Video From a MC9S12DJ256 Microcontroller
 
 
 ## Desription
-Using the MC9S12DJ256 Microcontroller to display 
+The goal of our project was to dispay color on a monitor that supported VGA. 
 
 ## Set-up
 
