@@ -63,7 +63,7 @@ void main(void) {
   ad0_enable();
   
   for(;;){
-    for(i = 0; i < 0x00FF;i++){ // refresh the box every 0x03FFF cycles 
+    for(i = 0; i < 0x07FF;i++){ // refresh the box every 0x07FFF cycles 
       col = (TC1-TCNT);
       if(col > x1sq && row > y1sq && col < x2sq  && row < y2sq){
         PTP = color;
